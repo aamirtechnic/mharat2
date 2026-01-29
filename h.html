@@ -11,7 +11,7 @@
             --accent-color: #e67e22;
             --bg-color: #f9f9f9;
         }
-        
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -23,6 +23,19 @@
             background-color: var(--bg-color);
             color: #333;
             line-height: 1.6;
+        }
+
+        /* شعار الجمعية */
+        .logo-wrapper {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .logo-wrapper img {
+            max-width: 160px;
+            height: auto;
+            display: inline-block;
         }
 
         /* الهيدر */
@@ -62,20 +75,30 @@
             transition: transform 0.3s ease;
             text-align: center;
             border-top: 5px solid transparent;
+            overflow: hidden;
         }
 
         .program-card:hover {
             transform: translateY(-10px);
         }
 
-        /* ألوان حدود البطاقات */
         .card-1 { border-top-color: #e74c3c; }
         .card-2 { border-top-color: #3498db; }
         .card-3 { border-top-color: #f1c40f; }
 
+        .program-image {
+            width: 100%;
+            height: 190px;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-bottom: 18px;
+            border: 1px solid rgba(0,0,0,0.06);
+            background: #f4f6f7;
+        }
+
         .icon {
             font-size: 3rem;
-            margin-bottom: 20px;
+            margin-bottom: 14px;
             display: block;
         }
 
@@ -101,7 +124,6 @@
             margin-bottom: 5px;
         }
 
-        /* الفوتر */
         footer {
             text-align: center;
             padding: 20px;
@@ -110,14 +132,20 @@
             margin-top: 50px;
         }
 
-        /* للجوال */
         @media (max-width: 768px) {
             header h1 { font-size: 1.8rem; }
             .container { grid-template-columns: 1fr; }
+            .program-image { height: 200px; }
+            .logo-wrapper img { max-width: 120px; }
         }
     </style>
 </head>
 <body>
+
+    <!-- شعار الجمعية -->
+    <div class="logo-wrapper">
+        <img src="https://d.top4top.io/p_3681upvnz1.jpeg" alt="شعار الجمعية">
+    </div>
 
     <header>
         <h1>مسارات التمكين والريادة</h1>
@@ -127,29 +155,32 @@
     <div class="container">
         
         <div class="program-card card-1">
+            <img class="program-image" src="https://i.top4top.io/p_3681d5jre1.png" alt="تنمية مهارات الشباب">
             <span class="icon">🌱</span>
             <h2 class="program-title">تنمية مهارات الشباب وبناء الشخصية</h2>
             <div class="scenario-box">
                 <span class="scenario-label">فكرة البرنامج:</span>
-                رحلة تحول لشاب/شابة تنطلق من الفراغ وعدم وضوح الهدف، وصولاً إلى تنمية المهارات وبناء شخصية واثقة وفاعلة، تعكس أثر برامج الجمعية في صقل الذات.
+                رحلة تحول لشاب/شابة تنطلق من الفراغ وعدم وضوح الهدف، وصولاً إلى تنمية المهارات وبناء شخصية واثقة وفاعلة.
             </div>
         </div>
 
         <div class="program-card card-2">
+            <img class="program-image" src="https://e.top4top.io/p_36814yqv51.png" alt="تمكين الشباب">
             <span class="icon">🤝</span>
             <h2 class="program-title">تمكين الشباب والمشاركة المجتمعية</h2>
             <div class="scenario-box">
                 <span class="scenario-label">فكرة البرنامج:</span>
-                مشاهد حية لشباب يشاركون بفاعلية في مبادرات مجتمعية، أعمال تطوعية، ولقاءات جماعية، ضمن حملات تخدم المجتمع المحلي وتعزز روح الانتماء الوطني.
+                مشاركة شبابية فاعلة في المبادرات المجتمعية والعمل التطوعي وتعزيز الانتماء الوطني.
             </div>
         </div>
 
         <div class="program-card card-3">
+            <img class="program-image" src="https://h.top4top.io/p_3681o3l1h1.png" alt="تأهيل الشباب لسوق العمل">
             <span class="icon">💼</span>
             <h2 class="program-title">تأهيل الشباب لسوق العمل وتنمية المواهب</h2>
             <div class="scenario-box">
                 <span class="scenario-label">فكرة البرنامج:</span>
-                الانتقال من مرحلة التعلم والتدريب النظري إلى التطبيق العملي، حيث يطور الشباب مهاراتهم ويكتشفون مواهبهم استعداداً للانطلاق بقوة في سوق العمل.
+                تطوير المهارات واكتشاف المواهب استعداداً للانطلاق بقوة في سوق العمل.
             </div>
         </div>
 
