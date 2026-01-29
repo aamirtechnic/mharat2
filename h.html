@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برامج تمكين الشباب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-color: #2c3e50;
+            --accent-color: #e67e22;
+            --bg-color: #f9f9f9;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-color);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* الهيدر */
+        header {
+            background: linear-gradient(135deg, #1abc9c, #2c3e50);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* حاوية البرامج */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* بطاقة البرنامج */
+        .program-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            border-top: 5px solid transparent;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* ألوان حدود البطاقات */
+        .card-1 { border-top-color: #e74c3c; }
+        .card-2 { border-top-color: #3498db; }
+        .card-3 { border-top-color: #f1c40f; }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .program-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--main-color);
+        }
+
+        .scenario-box {
+            background-color: #f4f6f7;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .scenario-label {
+            display: block;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+
+        /* الفوتر */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--main-color);
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* للجوال */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مسارات التمكين والريادة</h1>
+        <p>ثلاثة برامج متكاملة لصناعة جيل واعد</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="program-card card-1">
+            <span class="icon">🌱</span>
+            <h2 class="program-title">تنمية مهارات الشباب وبناء الشخصية</h2>
+            <div class="scenario-box">
+                <span class="scenario-label">فكرة البرنامج:</span>
+                رحلة تحول لشاب/شابة تنطلق من الفراغ وعدم وضوح الهدف، وصولاً إلى تنمية المهارات وبناء شخصية واثقة وفاعلة، تعكس أثر برامج الجمعية في صقل الذات.
+            </div>
+        </div>
+
+        <div class="program-card card-2">
+            <span class="icon">🤝</span>
+            <h2 class="program-title">تمكين الشباب والمشاركة المجتمعية</h2>
+            <div class="scenario-box">
+                <span class="scenario-label">فكرة البرنامج:</span>
+                مشاهد حية لشباب يشاركون بفاعلية في مبادرات مجتمعية، أعمال تطوعية، ولقاءات جماعية، ضمن حملات تخدم المجتمع المحلي وتعزز روح الانتماء الوطني.
+            </div>
+        </div>
+
+        <div class="program-card card-3">
+            <span class="icon">💼</span>
+            <h2 class="program-title">تأهيل الشباب لسوق العمل وتنمية المواهب</h2>
+            <div class="scenario-box">
+                <span class="scenario-label">فكرة البرنامج:</span>
+                الانتقال من مرحلة التعلم والتدريب النظري إلى التطبيق العملي، حيث يطور الشباب مهاراتهم ويكتشفون مواهبهم استعداداً للانطلاق بقوة في سوق العمل.
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
